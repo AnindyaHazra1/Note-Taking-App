@@ -1,0 +1,115 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+.container:hover {
+    border-color: #ffeb3b;
+}
+header {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.note-form {
+    margin: 20px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.note-form input, .note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.note-form button {
+    background: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.note-form button:hover {
+    background: #357ab8;
+}
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.color-option.selected {
+    border: 2px solid #333;
+}
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.note {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.note h2 {
+    margin-top: 0;
+    font-weight: bold;
+}
+.note p {
+    margin: 10px 0;
+}
+.note .note-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.note .note-footer button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #454647;
+}
+.note .note-footer button:hover {
+    color: #0780ea;
+}
+.note .note-footer button.delete:hover {
+    color: red;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
